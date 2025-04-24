@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Checkout - Custom Photo Frame</title>
+    <link rel="stylesheet" href="checkout.css">
+</head>
+<body>
+    <div class="checkout-container">
+        <h1>Customize Your Photo Frame</h1>
+        <form id="checkout-form">
+            <div class="form-group">
+                <label for="name">Your Name:</label>
+                <input type="text" id="name" name="name" required>
+            </div>
+            <div class="form-group">
+                <label for="address">Shipping Address:</label>
+                <textarea id="address" name="address" required></textarea>
+            </div>
+            <div class="form-group">
+                <label for="photo">Upload Your Photo:</label>
+                <input type="file" id="photo" name="photo" accept="image/*" required>
+            </div>
+            <button type="submit">Submit Order</button>
+        </form>
+    </div>
+
+    <script src="checkout.js"></script>
+</body>
+</html>
